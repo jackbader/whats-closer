@@ -30,6 +30,7 @@ async function geocodeAddress(
       address
     )}&key=${apiKey}`
   );
+
   const data = await response.json();
   const results = data.results;
   const firstResult = results[0];
