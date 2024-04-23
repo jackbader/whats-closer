@@ -33,7 +33,10 @@ async function geocodeAddress(
 
   const data = await response.json();
   const results = data.results;
+  console.log("results from api", results);
   const firstResult = results[0];
+  console.log("first result", firstResult);
   const geometry = firstResult.geometry;
+  console.log("gemoetry", geometry);
   return geometry;
 }
