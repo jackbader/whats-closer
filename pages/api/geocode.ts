@@ -25,6 +25,7 @@ async function geocodeAddress(
   address: string
 ): Promise<{ lat: number; lng: number }> {
   const apiKey = process.env.OPENCAGE_API_KEY; // Use directly if client-side is necessary
+
   const response = await fetch(
     `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(
       address
