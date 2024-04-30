@@ -1,9 +1,11 @@
 import AddressForm from "@/components/AddressForm";
 import { NextUIProvider } from "@nextui-org/react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   return (
     <NextUIProvider>
+      <Analytics />
       <main className="dark text-foreground bg-background flex min-h-screen flex-col items-center p-6">
         <h1 className="text-4xl py-4">Whats Closer?</h1>
         <AddressForm />
